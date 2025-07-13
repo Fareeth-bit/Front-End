@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name='viewport' content="width=device-width">
+  <title>Column Task</title>
+</head>
+<body>
+
+  <table border="1" cellpadding="10" cellspacing="0" align="center">
+    <tr>
+      <th><strong>Customer</strong></th>
+      <th><strong>Item</strong></th>
+      <th><strong>Payments</strong></th>
+    </tr>
+
+    <tr>
+      <td rowspan="1">Customer Name</td>
+      <td style="padding: 0;">
+        <!-- Nested Table inside the "Item" column -->
+        <table border="1" cellpadding="5" cellspacing="0" style="border-collapse: collapse; width: 100%;">
+          <tr  align="center">
+            <th>Item1</th>
+            <th>Quantity</th>
+            <th>Price</th>
+          </tr>
+          <tr  align="center">
+            <td>Item 1</td>
+            <td>5</td>
+            <td>$400.00</td>
+          </tr>
+          <tr  align="center">
+            <td>Item2</td>
+            <td>10</td>
+            <td>$200.00</td>
+          </tr>
+          <tr  align="center">
+            <td>Item3</td>
+            <td>2</td>
+            <td>$500.00</td>
+          </tr>
+        </table>
+      <td style="padding: 0;">
+        <table border="1"  cellpadding="20" cellspacing="0" style="border-collapse: collapse; width: 100%;">
+          <tr align="center">
+            <td>12 Sep 2018</td>
+            <td>$3000.00</td>
+          </tr>
+          <tr align="center">
+            <td>18 Sep 2018</td>
+            <td>$2000.00</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    
+  </table>
+
+</body>
+</html>
