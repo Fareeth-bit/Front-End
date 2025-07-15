@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Survey-Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background-color: white;
+    }
+
+    .form-box {
+      background-color: white;
+      padding: 20px;
+      max-width: 800px;
+      margin: auto;
+      border: 1px solid black;
+    }
+
+    label {
+      font-weight: bold;
+      display: block;
+      margin-top: 15px;
+    }
+
+    .required {
+      color: red;
+    }
+
+    .name-row {
+      display: flex;
+      flex-direction:row; 
+      gap: 70px; ;      
+    }
+
+    .email,.comments {
+        margin-right:20px;
+
+    }
+
+    
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      padding: 8px;
+      width: 100%;
+      margin-top: 5px;
+      margin-bottom: 15px;
+      border: 1px solid black;
+    }
+
+    textarea {
+      height: 80px;
+    }
+
+    .stars {
+      font-size: 24px;
+      color: orange;
+      margin-top: 5px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+
+    table, th, td {
+      border: 1px solid black;
+    }
+
+    th, td {
+      text-align: center;
+      padding: 10px;
+    }
+
+    .submit-btn {
+      padding: 10px 20px;
+      background-color: green;
+      color: white;
+      border: none;      
+      font-size: 16px;
+    }
+
+    
+  </style>
+</head>
+<body>
+
+  <div class="form-box">
+    <h2>Customer Survey</h2>
+
+    <form>
+
+      
+      <label>Name <span class="required">*</span></label>
+      <div class="name-row">
+        <div>
+          <input type="text" required><small>First</small>          
+        </div>
+        <div>
+          <input type="text" required>
+          <small>last</small>
+        </div>
+      </div>
+
+      
+       <div class="email">
+      <label>Email <span class="required">*</span></label>
+      <input type="email" required>
+       </div>
+
+      
+      <label>Your Experience <span class="required">*</span></label>
+      <div class="stars">★ ★ ★ ★ ★</div>
+      <small>Overall, how would you rate your experience with us?</small>
+
+      
+      <label>How satisfied are you with <span class="required">*</span></label>
+      <table>
+        <tr>
+          <th>Item</th>
+          <th>Very Unsatisfied</th>
+          <th>Unsatisfied</th>
+          <th>Neutral</th>
+          <th>Satisfied</th>
+          <th>Very Satisfied</th>
+        </tr>
+        <tr>
+          <td>Purchase</td>
+          <td><input type="radio" name="purchase" required></td>
+          <td><input type="radio" name="purchase"></td>
+          <td><input type="radio" name="purchase"></td>
+          <td><input type="radio" name="purchase"></td>
+          <td><input type="radio" name="purchase"></td>
+        </tr>
+        <tr>
+          <td>Service</td>
+          <td><input type="radio" name="service" required></td>
+          <td><input type="radio" name="service"></td>
+          <td><input type="radio" name="service"></td>
+          <td><input type="radio" name="service"></td>
+          <td><input type="radio" name="service"></td>
+        </tr>
+        <tr>
+          <td>Company Overall</td>
+          <td><input type="radio" name="overall" required></td>
+          <td><input type="radio" name="overall"></td>
+          <td><input type="radio" name="overall"></td>
+          <td><input type="radio" name="overall"></td>
+          <td><input type="radio" name="overall"></td>
+        </tr>
+      </table>
+
+      
+      <label>How likely are you to <span class="required">*</span></label>
+      <table>
+        <tr>
+          <th>Action</th>
+          <th>Very Unlikely</th>
+          <th>Unlikely</th>
+          <th>Neutral</th>
+          <th>Likely</th>
+          <th>Very Likely</th>
+        </tr>
+        <tr>
+          <td>Buy from us again</td>
+          <td><input type="radio" name="buy" required></td>
+          <td><input type="radio" name="buy"></td>
+          <td><input type="radio" name="buy"></td>
+          <td><input type="radio" name="buy"></td>
+          <td><input type="radio" name="buy"></td>
+        </tr>
+        <tr>
+          <td>Recommend our product to others</td>
+          <td><input type="radio" name="recommendProduct" required></td>
+          <td><input type="radio" name="recommendProduct"></td>
+          <td><input type="radio" name="recommendProduct"></td>
+          <td><input type="radio" name="recommendProduct"></td>
+          <td><input type="radio" name="recommendProduct"></td>
+        </tr>
+        <tr>
+          <td>Recommend our company to others</td>
+          <td><input type="radio" name="recommendCompany" required></td>
+          <td><input type="radio" name="recommendCompany"></td>
+          <td><input type="radio" name="recommendCompany"></td>
+          <td><input type="radio" name="recommendCompany"></td>
+          <td><input type="radio" name="recommendCompany"></td>
+        </tr>
+      </table>
+
+      <div class="comments">
+      <label>Additional comments or suggestions</label>
+      <textarea ></textarea>
+      </div>
+
+      
+      <button type="submit" class="submit-btn">Submit</button>
+    </form>
+  </div>
+
+</body>
+</html>
